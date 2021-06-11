@@ -1,0 +1,13 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="static/css/style.css">
+    </head>
+    <script src="https://cdn.socket.io/3.1.3/socket.io.min.js" integrity="sha384-cPwlPLvBTa3sKAgddT6krw0cJat7egBga3DJepJyrLl4Q9/5WLra3rrnMcyTyOnh" crossorigin="anonymous"></script>
+    <script src="static/js/main.js"></script>
+    <body id="docbody" {% if state=="off" %} class="dark" {% endif %}>
+        <div>
+            <img state="{{state}}" id="lightswitch" style="height:60%; margin-left: auto; margin-right:auto; display: block; margin-top: 6%;" onclick="imageOnClick()" src="static/light-switch-{{ state }}.png"/>
+    <img style="position:relative; left: 48%; margin-top:-7%;  width:300px; z-index=1;" src="static/sticky.png"/>
+        </div>
+    </body>
+</html>
